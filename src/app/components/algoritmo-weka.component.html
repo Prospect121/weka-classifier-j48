@@ -50,7 +50,7 @@
                 </mat-form-field>
 
                 <mat-form-field style="margin-right: 15px;" fxFlex.xs appearance="fill">
-                  <mat-label>windy</mat-label>
+                  <mat-label>Windy</mat-label>
                   <mat-select formControlName="windy">
                     <mat-option>None</mat-option>
                     <mat-option value="TRUE">True</mat-option>
@@ -72,11 +72,6 @@
           <mat-card-content class="smaller-card-content" fxLayout="column" fxLayout.lg="column" fxLayout.xl="column">
             <div fxFlex.lg fxFlex>
               <div class="example-table-container" fxLayout="row" fxLayout.xl="row">
-                <!--div class="demo-button-container">
-                  <button mat-raised-button (click)="generarAlgoritmo()" class="demo-button">
-                    Generar algoritmo
-                  </button>
-                </div-->
 
                 <table mat-table [dataSource]="datasetService.listDataSetObject" recycleRows fxFlex fxFlex.lg fxFlex.xl
                   class="mat-elevation-z8 demo-table">

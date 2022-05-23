@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AbstractControl, FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { DataSetObject } from '../core/models/data-set-object';
 import { ObjectDatasetService } from '../core/services/object-dataset.service';
 
@@ -16,6 +16,7 @@ export class AlgoritmoWekaComponent implements OnInit {
     'humidity',
     'windy',
     'play',
+    'actions'
   ];
 
   constructor(
@@ -54,9 +55,5 @@ export class AlgoritmoWekaComponent implements OnInit {
       this.datasetService.deleteDataset(element);
       this.datasetService.listDataset();
     }
-  }
-
-  generarAlgoritmo() {
-
   }
 }

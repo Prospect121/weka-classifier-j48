@@ -47,11 +47,6 @@ export class ObjectDatasetService {
 
     //Buscamos el objeto a eliminar en el array del localStorage.
     arrayDataset = arrayDataset.filter(item => item.id !== element.id);
-    /* for (var i = 0; i < arrayDataset.length; i++) {
-      if (arrayDataset[i].id === element.id) {
-        arrayDataset.splice(i, 1);
-      }
-    }*/
 
     //Guardamos el array actualizado del objeto en el localStorage.
     localStorage.setItem(this.nameLocalStorage, JSON.stringify(arrayDataset));
